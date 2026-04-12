@@ -20,3 +20,10 @@ main{
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+
+.second-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px
+}
