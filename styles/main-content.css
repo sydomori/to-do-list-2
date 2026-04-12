@@ -13,6 +13,7 @@ main{
 .add-todo-heading{
   margin-top:0;
   color: var(--surface);
+  text-decoration: underline;
 }
 
 #to-do-form{
@@ -41,6 +42,11 @@ main{
   padding: 20px;
   border-radius: 20px;
   background: border-box linear-gradient(260deg, var(--primary-light) 60%, var(--primary) 60%);
+}
+
+.COMPLETED h3 , .TODO h3{
+  color: var(--surface);
+  text-decoration: underline;
 }
 
 .TODO{
