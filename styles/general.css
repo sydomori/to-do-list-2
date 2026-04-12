@@ -8,3 +8,21 @@
 body{
   padding: 20px;
 }
+
+:root {
+  /* 🎯 Main Colors */
+  --color-primary: #FFD60A;        /* bright yellow */
+  --color-primary-hover: #e6c200;  /* darker yellow */
+
+  --color-background: #0D0D0D;     /* deep black */
+  --color-surface: #1A1A1A;        /* cards / form */
+
+  --color-text: #F5F5F5;           /* main text */
+  --color-text-muted: #AAAAAA;
+
+  --color-border: #FFD60A;
+
+  /* ✨ UI */
+  --radius: 10px;
+  --transition: all 0.2s ease;
+}
