@@ -1,0 +1,5 @@
+main{
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  border: solid 2px black;
+}
