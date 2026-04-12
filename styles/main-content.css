@@ -55,3 +55,7 @@ main{
   display: flex;
   justify-content: center;
 }
+
+.form-control{
+  background-color: var(--surface);
+}
