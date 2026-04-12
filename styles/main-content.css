@@ -12,6 +12,7 @@ main{
 
 .add-todo-heading{
   margin-top:0;
+  color: var(--surface);
 }
 
 #to-do-form{
