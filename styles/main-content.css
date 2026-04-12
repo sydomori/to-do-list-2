@@ -2,7 +2,7 @@ main{
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 20px;
-  border: solid 2px black;
+  border: solid 2px var(--border);
   border-radius: 20px;
   padding: 20px;
   margin: 30px;
@@ -16,10 +16,10 @@ main{
 }
 
 #to-do-form{
-  border: solid 2px black;
+  border: solid 2px var(--border);
   padding: 10px;
   border-radius: 20px;
-  background: border-box linear-gradient(260deg, var(--primary-light) 60%, var(--primary) 60%);
+  background: border-box linear-gradient(260deg, var(--primary) 60%, var(--primary-light) 60%);
 }
 
 .first-container{
@@ -37,14 +37,14 @@ main{
 }
 
 .COMPLETED{
-  border: solid 2px black;
+  border: solid 2px var(--border);
   padding: 20px;
   border-radius: 20px;
   background: border-box linear-gradient(260deg, var(--primary-light) 60%, var(--primary) 60%);
 }
 
 .TODO{
-  border: solid 2px black;
+  border: solid 2px var(--border);
   padding: 20px;
   border-radius: 20px;
   background: border-box linear-gradient(260deg, var(--primary-light) 60%, var(--primary) 60%);

@@ -22,7 +22,7 @@ body{
   /* Neutrals */
   --background: #fffef8;                /* Off-white background */
   --surface: #f7f4e8;                   /* Light surface block (cards, sections) */
-  --border: #e2ddc5;                    /* Soft border/shadow tone */
+  --border: #313131;                    /* Soft border/shadow tone */
   --text: #2e2e2e;                      /* Main text color (almost black) */
   --text-muted: #5c5c5c;                /* Secondary text color */
 
