@@ -17,29 +17,24 @@
   </header>
   <main>
     <h3 class="text-center">ADD TODO</h3>
-    <form class="ADD-TODO">
-      <label for="todo-input">
-        <input type="text" id="todo-input" placeholder="Add a new todo...">
-      </label>
+    <form class="row g-3" id="to-do-form">
+      
+      <div class="col-md-6">
+        <label for="todo-input">Name</label>
+        <input class="form-control" type="text" id="todo-input" placeholder="Add a new todo...">
+      </div>
 
-      <label for="todo-date">
-        <input type="date" id="todo-date" name="todo-date">
-      </label>
-
-      <label for="todo-description">
-        <input type="textarea" id="todo-description" placeholder="Add a description...">
-      </label>
-
-      <label for="todo-completed ">
-        <input type="checkbox" name="todo-completed" id="todo-completed">Completed
-      </label>
-      <br>
-
-      <label for="todo-uncompleted">
-        <input type="checkbox" name="todo-completed" id="todo-uncompleted">Uncompleted
-      </label>
-      <br>
-
+      <div class="col-md-6">
+        <label for="todo-date">Date</label>
+        <input class="form-control" type="date" id="todo-date" name="todo-date">
+      </div>
+      
+      
+      <div class="mb-3">
+        <label for="todo-description">Description</label>
+        <textarea class="form-control" id="todo-description" name="todo-description" rows="4" cols="50" placeholder="Add a description..."></textarea>
+      </div>
+    
       <div id="add button"><button type="submit">ADD TODO</button></div>
     </form>
   </main>
