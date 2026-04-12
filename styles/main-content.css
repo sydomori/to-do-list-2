@@ -41,7 +41,7 @@ main{
   border: solid 2px var(--border);
   padding: 20px;
   border-radius: 20px;
-  background: border-box linear-gradient(260deg, var(--primary-light) 60%, var(--primary) 60%);
+  background: border-box linear-gradient(260deg, var(--primary) 60%, var(--primary-light) 60%);
 }
 
 .COMPLETED h3 , .TODO h3{
@@ -53,7 +53,7 @@ main{
   border: solid 2px var(--border);
   padding: 20px;
   border-radius: 20px;
-  background: border-box linear-gradient(260deg, var(--primary-light) 60%, var(--primary) 60%);
+  background: border-box linear-gradient(260deg, var(--primary) 60%, var(--primary-light) 60%);
 
 }
 
