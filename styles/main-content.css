@@ -17,6 +17,7 @@ main{
   border: solid 2px black;
   padding: 10px;
   border-radius: 20px;
+  background: border-box linear-gradient(260deg, var(--primary-light) 60%, var(--primary) 60%);
 }
 
 .first-container{
@@ -37,12 +38,15 @@ main{
   border: solid 2px black;
   padding: 20px;
   border-radius: 20px;
+  background: border-box linear-gradient(260deg, var(--primary-light) 60%, var(--primary) 60%);
 }
 
 .TODO{
   border: solid 2px black;
   padding: 20px;
   border-radius: 20px;
+  background: border-box linear-gradient(260deg, var(--primary-light) 60%, var(--primary) 60%);
+
 }
 
 #add-button{

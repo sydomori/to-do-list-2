@@ -14,7 +14,7 @@ body{
   /* Main Brand Colors */
   --primary: rgb(255, 219, 103);        /* Golden yellow */
   --primary-dark: rgb(204, 175, 82);    /* Slightly darker version for hover states */
-  --primary-light: rgb(255, 232, 153);  /* Softer tint for subtle highlights */
+  --primary-light: rgb(250, 224, 138);  /* Softer tint for subtle highlights */
   --primary-dark-1: rgb(204, 164, 52);
   --primary-darker: rgb(153, 123, 39);
 
