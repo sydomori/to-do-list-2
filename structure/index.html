@@ -16,9 +16,11 @@
     <h1 class="my-heading">MY TODO LIST 📖</h1>
   </header>
   <main>
-    <h3 class="text-center">ADD TODO</h3>
+    
     <form class="row g-3" id="to-do-form">
-      
+
+      <h3 class="text-center">ADD TODO</h3>
+
       <div class="col-md-6">
         <label for="todo-input">Name</label>
         <input class="form-control" type="text" id="todo-input" placeholder="Add a new todo...">
@@ -35,28 +37,31 @@
         <textarea class="form-control" id="todo-description" name="todo-description" rows="4" cols="50" placeholder="Add a description..."></textarea>
       </div>
     
-      <div id="add button"><button type="submit">ADD TODO</button></div>
+      <div id="add-button">
+        <button class="btn btn-primary" type="submit">ADD TODO</button>
+      </div>
     </form>
+
+    <div class="TODO LIST">
+      <h3>TODO LIST 📚</h3>
+      <div id="todo list">
+        <ul>
+          ... TODO LIST ITEMS...
+        </ul>
+      </div>
+   </div>
+
+   <div class="COMPLETED TODOS">
+      <h3>COMPLETED TODOS ✅</h3>
+      <div id="completed-todos">
+        <ul>
+          ... COMPLETED TODOS ITEMS...
+        </ul>
+      </div>
+   </div>
+
   </main>
-
-  <div class="TODO LIST">
-    <h3>TODO LIST 📚</h3>
-    <div id="todo list">
-      <ul>
-        ... TODO LIST ITEMS...
-      </ul>
-    </div>
-  </div>
-
-  <div class="COMPLETED TODOS">
-    <h3>COMPLETED TODOS ✅</h3>
-    <div id="completed-todos">
-      <ul>
-        ... COMPLETED TODOS ITEMS...
-      </ul>
-    </div>
-  </div>
-  
+   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/todo.js"></script>
 </body>
