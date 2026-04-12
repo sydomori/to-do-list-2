@@ -16,8 +16,7 @@ main{
 #to-do-form{
   border: solid 2px black;
   padding: 10px;
-  background: var(--color-surface);
-  border-radius: var(--radius);
+  border-radius: 20px;
 }
 
 .first-container{
@@ -38,14 +37,12 @@ main{
   border: solid 2px black;
   padding: 20px;
   border-radius: 20px;
-  background: var(--color-surface);
 }
 
 .TODO{
   border: solid 2px black;
   padding: 20px;
   border-radius: 20px;
-  background: var(--color-surface);
 }
 
 #add-button{

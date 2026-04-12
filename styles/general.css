@@ -3,29 +3,9 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: var(--color-primary);
 }
 
 body{
   padding: 20px;
-  background-color: var(--color-background);
-  color: var(--color-text);
 }
 
-:root {
-  /* 🎯 Main Colors */
-  --color-primary: #eac300;        /* bright yellow */
-  --color-primary-hover: #e6c200;  /* darker yellow */
-
-  --color-background: #0D0D0D;     /* deep black */
-  --color-surface: #1A1A1A;        /* cards / form */
-
-  --color-text: #F5F5F5;           /* main text */
-  --color-text-muted: #AAAAAA;
-
-  --color-border: #FFD60A;
-
-  /* ✨ UI */
-  --radius: 10px;
-  --transition: all 0.2s ease;
-}
