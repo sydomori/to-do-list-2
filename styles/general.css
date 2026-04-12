@@ -14,7 +14,7 @@ body{
 
 :root {
   /* 🎯 Main Colors */
-  --color-primary: #FFD60A;        /* bright yellow */
+  --color-primary: #eac300;        /* bright yellow */
   --color-primary-hover: #e6c200;  /* darker yellow */
 
   --color-background: #0D0D0D;     /* deep black */
