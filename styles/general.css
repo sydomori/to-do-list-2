@@ -9,3 +9,31 @@ body{
   padding: 20px;
 }
 
+:root{
+  /* Main Brand Colors */
+  --primary: rgb(255, 219, 103);        /* Golden yellow */
+  --primary-dark: rgb(204, 175, 82);    /* Slightly darker version for hover states */
+  --primary-light: rgb(255, 232, 153);  /* Softer tint for subtle highlights */
+  --primary-dark-1: rgb(204, 164, 52);
+  --primary-darker: rgb(153, 123, 39);
+
+  /* Neutrals */
+  --background: #fffef8;                /* Off-white background */
+  --surface: #f7f4e8;                   /* Light surface block (cards, sections) */
+  --border: #e2ddc5;                    /* Soft border/shadow tone */
+  --text: #2e2e2e;                      /* Main text color (almost black) */
+  --text-muted: #5c5c5c;                /* Secondary text color */
+
+  /* Accent Colors */
+  --accent: #ff715b;                    /* Coral-red accent */
+  --accent-dark: #d94c3f;               /* For hover or active */
+  --accent-light: #ffc3b7;              /* For badges or background highlights */
+
+  /* Success / Info / Error (optional for badges or alerts) */
+  --success: #46c49e;
+  --info: #4da6ff;
+  --warning: #f7b733;
+  --error: #d64545;
+
+}
+
