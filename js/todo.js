@@ -77,12 +77,30 @@ function renderTasks(){
         }
         console.log(tasks);
         console.log(completedTasks);
+        renderCompletedTasks();
         renderTasks();
       })
     })
 
 
   });
+}
+
+function renderCompletedTasks(){
+  completedTasksDiv.innerHTML = '';
+  let html = '';
+  completedTasks.forEach((completedTask)=>{
+   html = `
+     <div class="task-elements">
+      <p class="task-name">${completedTask.name}</p>
+      <p class="task-date">${completedTask.dueDate}</p>
+      <p class="task-description">${completedTask.description}</p>
+      <button type='button' class="btn btn-danger js-delete-button">DELETE</button>
+    </div>
+   `
+   completedTasksDiv.innerHTML += html;
+
+  })
 }
 
 const addButton = document.querySelector('#addButton');
