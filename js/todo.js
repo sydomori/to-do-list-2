@@ -10,11 +10,6 @@ console.log(descriptionInput);
 const completedTasksDiv = document.querySelector('#completed-todos');
 console.log(completedTasksDiv);
 
-
-
-
-
-
 function addTasks(event){
   event.preventDefault();
   
@@ -22,7 +17,6 @@ function addTasks(event){
   let dueDate = dueDateInput.value;
   let description = descriptionInput.value;
   
-
   let task = {
     name:name,
     dueDate:dueDate,
@@ -82,7 +76,6 @@ function renderTasks(){
       })
     })
 
-
   });
 }
 
@@ -107,7 +100,6 @@ function renderCompletedTasks(){
         renderCompletedTasks();
       })
     })
-
 
   })
 }
