@@ -1,4 +1,11 @@
-export const completedTasks = [];
+export const completedTasks = [
+  {
+    name:"wash car",
+    dueDate:"13/04/2026",
+    description:"wash yesterday's car",
+    completed:true
+  }
+];
 
 export const tasks = [
   {

@@ -108,3 +108,5 @@ const addButton = document.querySelector('#addButton');
 addButton.addEventListener('click',renderTasks);
 
 renderTasks();
+renderCompletedTasks();
+
