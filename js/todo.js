@@ -1,17 +1,5 @@
-const tasks = [
-  {
-    name:"wash dishes",
-    dueDate:"13/04/2026",
-    description:"wash yesterday's dishes and clean the sink",
-    completed:false
-  },
-  {
-    name:"do laundry",
-    dueDate:"14/04/2026",
-    description:"wash, dry and fold clothes",
-    completed:false
-  }
-]
+import {tasks} from './tasks.js';
+import {completedTasks} from './tasks.js';
 
 const nameInput = document.querySelector('#todo-input');
 console.log(nameInput);
@@ -19,6 +7,9 @@ const dueDateInput = document.querySelector('#todo-date');
 console.log(dueDateInput);
 const descriptionInput = document.querySelector('#todo-description');
 console.log(descriptionInput);
+const completedTasksDiv = document.querySelector('#completed-todos');
+console.log(completedTasksDiv);
+
 
 
 
@@ -60,7 +51,7 @@ function renderTasks(){
       <p class="task-date">${task.dueDate}</p>
       <p class="task-description">${task.description}</p>
       <button type='button' class="btn btn-danger js-delete-button">DELETE</button>
-      <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+      <input class="js-checkbox form-check-input" type="checkbox" value="" id="checkDefault">
     </div>
     `
     tasksContainer.innerHTML += html;
