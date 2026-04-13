@@ -91,7 +91,7 @@ function renderCompletedTasks(){
   let html = '';
   completedTasks.forEach((completedTask)=>{
    html = `
-     <div class="task-elements">
+     <div class="completed-task-elements">
       <p class="task-name">${completedTask.name}</p>
       <p class="task-date">${completedTask.dueDate}</p>
       <p class="task-description">${completedTask.description}</p>

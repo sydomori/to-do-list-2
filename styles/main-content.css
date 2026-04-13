@@ -77,14 +77,21 @@ main{
   align-items: center;
   width: 100%;
   color: var(--completed-text);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
   border: solid 1px var(--border);
   border-radius: 20px;
-  background: var(--primary-light);
+  background :linear-gradient(var(--primary), var(--primary-light));
   padding: 10px;
 }
 
 #todo-list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+#completed-todos{
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -98,5 +105,28 @@ main{
 .task-elements input[type="checkbox"]{
   width: 20px;
   height: 20px;
+}
+
+.completed-task-elements{
+  display: grid;
+  grid-template-columns: 2fr 2fr 3fr 2fr;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  border: solid 1px var(--border);
+  border-radius: 20px;
+  background :linear-gradient(var(--primary), var(--primary-light));
+  padding: 10px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.completed-task-elements p{
+  margin: 0;
+}
+
+.completed-task-elements input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+
 }
 
