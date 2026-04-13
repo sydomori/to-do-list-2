@@ -63,6 +63,25 @@ function renderTasks(){
         renderTasks();
       })
     })
+
+    const checkboxes = document.querySelectorAll('.js-checkbox');
+    checkboxes.forEach((checkbox, index)=>{
+      checkbox.addEventListener('change',()=>{
+        if(checkbox.checked){
+          tasks[index].completed = true;
+          completedTasks.push(tasks[index]);
+          tasks.splice(index, 1);
+        }
+        else{
+          tasks[index].completed = false;
+        }
+        console.log(tasks);
+        console.log(completedTasks);
+        renderTasks();
+      })
+    })
+
+
   });
 }
 
