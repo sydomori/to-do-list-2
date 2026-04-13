@@ -95,10 +95,19 @@ function renderCompletedTasks(){
       <p class="task-name">${completedTask.name}</p>
       <p class="task-date">${completedTask.dueDate}</p>
       <p class="task-description">${completedTask.description}</p>
-      <button type='button' class="btn btn-danger js-delete-button">DELETE</button>
+      <button type='button' class="btn btn-danger completed-js-delete-button">DELETE</button>
     </div>
    `
    completedTasksDiv.innerHTML += html;
+
+   const deleteButtons = document.querySelectorAll('.completed-js-delete-button');
+   deleteButtons.forEach((button, index)=>{
+      button.addEventListener('click',()=>{
+        completedTasks.splice(index, 1);
+        renderCompletedTasks();
+      })
+    })
+
 
   })
 }
