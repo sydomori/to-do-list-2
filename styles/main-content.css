@@ -19,6 +19,7 @@ main{
 #to-do-form{
   border: solid 2px var(--border);
   padding: 10px;
+  height: 400px;
   border-radius: 20px;
   background: border-box linear-gradient(260deg, var(--primary) 60%, var(--primary-light) 60%);
 }
@@ -28,6 +29,8 @@ main{
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding: 20px;
+  align-items: bottom;
+  justify-content: space-around;
 }
 
 .second-container{
@@ -65,3 +68,35 @@ main{
 .form-control{
   background-color: var(--surface);
 }
+
+.task-elements{
+  display: grid;
+  grid-template-columns: 2fr 2fr 3fr 2fr 2fr;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  color: var(--completed-text);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border: solid 1px var(--border);
+  border-radius: 20px;
+  background: var(--primary-light);
+  padding: 10px;
+}
+
+#todo-list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.task-elements p{
+  margin: 0;
+}
+
+.task-elements input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+}
+

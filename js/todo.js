@@ -45,3 +45,30 @@ function addTasks(event){
 
 const form = document.querySelector('#to-do-form');
 form.addEventListener('submit', addTasks);
+form.addEventListener('onsubmit', renderTasks);
+
+const tasksContainer = document.querySelector('#todo-list')
+
+function renderTasks(){
+  tasksContainer.innerHTML = '';
+  let html = '';
+
+  tasks.forEach((task)=>{
+    html = `
+    <div class="task-elements">
+      <p class="task-name">${task.name}</p>
+      <p class="task-date">${task.dueDate}</p>
+      <p class="task-description">${task.description}</p>
+      <button type='button' class="btn btn-danger js-delete-button">DELETE</button>
+      <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+    </div>
+    `
+    tasksContainer.innerHTML += html;
+  });
+}
+
+const addButton = document.querySelector('#addButton');
+
+addButton.addEventListener('click',renderTasks);
+
+renderTasks();
