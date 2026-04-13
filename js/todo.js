@@ -64,6 +64,14 @@ function renderTasks(){
     </div>
     `
     tasksContainer.innerHTML += html;
+
+    const deleteButtons = document.querySelectorAll('.js-delete-button');
+    deleteButtons.forEach((button, index)=>{
+      button.addEventListener('click',()=>{
+        tasks.splice(index, 1);
+        renderTasks();
+      })
+    })
   });
 }
 
