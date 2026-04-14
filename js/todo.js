@@ -25,12 +25,12 @@ function addTasks(event){
   }
   tasks.push(task);
   console.log(tasks);
-
+  renderTasks();
+  form.reset();
 }
 
 const form = document.querySelector('#to-do-form');
 form.addEventListener('submit', addTasks);
-form.addEventListener('onsubmit', renderTasks);
 
 const tasksContainer = document.querySelector('#todo-list')
 
